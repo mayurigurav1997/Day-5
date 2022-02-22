@@ -1,4 +1,4 @@
-//2,16,24
+//2,16
 
 // Problem:1
 // Write a function called “addFive”.
