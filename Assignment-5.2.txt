@@ -376,19 +376,15 @@ console.log(addProperty(obj,'mykey'));
 // removeProperty(obj, “name”);
 // Output:
 // undefined
-// var obj = {
-//     mykey: "value1",
-//     mykey1:"value2"
-//    };
-// let removeProperty = function(obj, key) {
-//             for(i in obj){
-//                 if(i===key){
-//                     obj.remove("i");
-//                 }
-//             }
-//             return obj;
-// }
-// console.log(removeProperty(obj,'mykey'));
+var obj = {
+    mykey: "value1",
+    mykey1:"value2"
+   };
+let removeProperty = function(obj, key) {
+            delete obj[key];
+            return obj;
+}
+console.log(removeProperty(obj,'mykey1'));
 
 // Problem:25
 // Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
